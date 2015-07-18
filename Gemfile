@@ -16,6 +16,11 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
