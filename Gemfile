@@ -8,6 +8,7 @@ gem 'bcrypt'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -36,4 +37,9 @@ group :test do
   gem 'factory_girl_rails'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
+end
+
+group :production do
+  gem 'pg', '0.18.2'
+  gem 'rails_12factor', '0.0.3'
 end
